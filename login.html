@@ -11,23 +11,34 @@
 </head>
 
 <body class="bg-primary" style="background: linear-gradient(to right, #007bff, #add5ff)">
-    
+
     <div class="container">
-        <div class="row">
-            <div>
-                <div class="card bg-light p-5">
-                    <div>
-                        <h3>Login</h3>
-                        <form>
-                            <input type="text" name="usuario" id="usuario" placeholder="Digite seu email...">
-                            <input type="text" name="senha" id="senha" placeholder="Digite sua senha...">
-                        </form>
-                    </div>
+        <div class="row justify-content-center mt-5">
+            <div class="card bg-light p-5 my-4 shadow">
+                <div class="">
+                    <h3 class="text-center font-weight-lighter mb-5">Login</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Usuário</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Seu email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compratilhar o seu email, com
+                                ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
